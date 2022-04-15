@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2063057e15eb42f0ade67f6b5f1cb396 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@master/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_2063057e15eb42f0ade67f6b5f1cb396" ></div>
+        
+</body>
+<script>    
+    
+            var map_2063057e15eb42f0ade67f6b5f1cb396 = L.map(
+                "map_2063057e15eb42f0ade67f6b5f1cb396",
+                {
+                    center: [48.08986258333332, 13.900313916666667],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_55c158616ac148eba09c5b6107851b92 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2063057e15eb42f0ade67f6b5f1cb396);
+        
+    
+            var heat_map_829218928f934ab69cf34f703d5012e0 = L.heatLayer(
+                [[47.516231, 14.550072, 2.29913785639285], [50.503887, 4.469936, 2.78143263670025], [42.733883, 25.48583, 5.03883807111907], [35.126413, 33.429859, 2.56016132330235], [49.817492, 15.472962, 1.85709789109223], [51.165691, 10.451526, 1.54690965159041], [56.26392, 9.501785, 1.81781458291257], [40.463667, -3.74922, 3.36845398789423], [58.595272, 25.013607, 4.07971423199846], [61.92411, 25.748151, 0.623874450025199], [46.227638, 2.213749, 1.74586936380481], [39.074208, 21.824312, 3.54507354036397], [45.1, 15.2, 3.31717824448043], [47.162494, 19.503304, 3.56151711378355], [53.41291, -8.24389, 2.42969198392961], [41.87194, 12.56738, 1.98529298527983], [55.169438, 23.881275, 2.65848484065266], [49.815273, 6.129583, 2.48769665164086], [56.879635, 24.603189, 6.74845027893117], [35.937496, 14.375416, 3.00796652450315], [52.132633, 5.291266, 1.68813017869622], [51.919438, 19.145136, 2.18379872390258], [39.399872, -8.224454, 2.27716394887833], [45.943161, 24.96676, 9.01491283343835]],
+                {"blur": 15, "maxZoom": 18, "minOpacity": 0.5, "radius": 25}
+            ).addTo(map_2063057e15eb42f0ade67f6b5f1cb396);
+        
+</script>
